@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sing up</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+     <div class="container">
+
+          <div class="content">
+               <div class="logo">
+                    <img src="img/logo.svg" alt="logo">
+               </div>
+               <div class="img"></div>
+               <div class="text">
+                    Start for free &  Get  <br /> attractive offers today !
+               </div>
+          </div>
+          <form id="form">
+               <div class="social">
+                    <div class="title">Get Started</div>
+                    <div class="question">
+                         Already Have an Account?
+                         <span>Sign In</span>
+                    </div>
+                    <div class="btn">
+                         <div class="btn-1" id="btn1">
+                              <img src="https://img.icons8.com/color/30/000000/google-logo.png"/>
+                               Sign Up
+                         </div>
+                         <div class="btn-2" id="btn2">
+                              <img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"/>
+                              Sign Up
+                         </div>
+                    </div>
+                    <div class="or">OR</div>
+               </div>
+
+               
+               <!-- /**
+                    *! user name Input here 
+                    **/ -->
+               <div>
+                    <label for="username">User Name</label>
+                    <i class="bi bi-person-fill"></i>
+                    <input type="text" name="username" id="username" placeholder="Mariam Bregvadze">
+                    <!-- <p class="p-input">Usernames must be lowercase and 4-8 characters in length.</p> -->
+                    <i class="bi bi-exclamation-circle-fill fill-icon"></i>   
+                    <i class="bi bi-check-circle success-icon"></i>
+                    <div class="error" id="usernameError"></div>
+               </div>
+                <!-- /**
+                    *! email  Input here 
+                    **/ -->
+               <div>
+                    <label for="email">Email</label>
+                    <i class="bi bi-envelope"></i>  
+                    <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+                    <i class="bi bi-exclamation-circle-fill fill-icon"></i>   
+                    <i class="bi bi-check-circle success-icon"></i>
+                    <div class="error" id="emailError"></div>
+               </div>
+
+                    <!-- /**
+
+                    *! password  Input here 
+                    **/ -->
+               <div>
+                    <label for="password">Password</label>
+                    <i class="bi bi-lock-fill"></i>
+                    <input type="password" name="password" id="password" placeholder="Password .....">
+                    <i class="bi bi-exclamation-circle-fill fill-icon"></i>   
+                    <i class="bi bi-check-circle success-icon"></i>
+                    <div class="error" id="passworError"></div>
+               </div>
+
+               <div>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                    <div class="error"  id="confirmPswordError"></div>
+               </div>
+
+                    <button type="submit" id="submit">Submit</button>
+          </form>
+     </div>
+     
+
+     <script src="app.js"></script>
+</body>
+</html>
